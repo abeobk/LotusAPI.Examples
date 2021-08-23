@@ -42,6 +42,8 @@
             this.flatLabel13 = new Abeo.Controls.FlatLabel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.advancedImageView1 = new Abeo.Controls.AdvancedImageView();
+            this.advancedImageView3 = new Abeo.Controls.AdvancedImageView();
+            this.pointcloudView1 = new LotusAPI.Controls.PointcloudView();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.flatLabel2 = new Abeo.Controls.FlatLabel();
             this.flatLabel1 = new Abeo.Controls.FlatLabel();
@@ -61,8 +63,6 @@
             this.flatFormButtonsHorizontal1 = new Abeo.Controls.ZeroCode.FlatFormButtonsHorizontal();
             this.flatStatusBar1 = new Abeo.Controls.ZeroCode.FlatStatusBar();
             this.logFileWatcher1 = new LotusAPI.Utils.LogFileWatcher(this.components);
-            this.advancedImageView3 = new Abeo.Controls.AdvancedImageView();
-            this.pointcloudView1 = new LotusAPI.Controls.PointcloudView();
             this.flatTitlePanel1.SuspendLayout();
             this.panelDASHBOARD.SuspendLayout();
             this.panelDB.SuspendLayout();
@@ -70,10 +70,10 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pointcloudView1)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pointcloudView1)).BeginInit();
             this.SuspendLayout();
             // 
             // flatTitlePanel1
@@ -100,7 +100,6 @@
             this.btDASHBOARD.BackColor = System.Drawing.Color.Transparent;
             this.btDASHBOARD.BorderColor = System.Drawing.Color.Empty;
             this.btDASHBOARD.BorderSize = 0;
-            this.btDASHBOARD.Checked = true;
             this.btDASHBOARD.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(212)))));
             this.btDASHBOARD.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
             this.btDASHBOARD.ControlToBringToFront = this.panelDASHBOARD;
@@ -118,7 +117,6 @@
             this.btDASHBOARD.Name = "btDASHBOARD";
             this.btDASHBOARD.Size = new System.Drawing.Size(120, 32);
             this.btDASHBOARD.TabIndex = 5;
-            this.btDASHBOARD.TabStop = true;
             this.btDASHBOARD.Text = "DASHBOARD";
             this.btDASHBOARD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btDASHBOARD.UseVisualStyleBackColor = false;
@@ -208,6 +206,7 @@
             this.btHOME.BackColor = System.Drawing.Color.Transparent;
             this.btHOME.BorderColor = System.Drawing.Color.Empty;
             this.btHOME.BorderSize = 0;
+            this.btHOME.Checked = true;
             this.btHOME.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(212)))));
             this.btHOME.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
             this.btHOME.ControlToBringToFront = this.panelHOME;
@@ -225,6 +224,7 @@
             this.btHOME.Name = "btHOME";
             this.btHOME.Size = new System.Drawing.Size(66, 32);
             this.btHOME.TabIndex = 3;
+            this.btHOME.TabStop = true;
             this.btHOME.Text = "HOME";
             this.btHOME.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btHOME.UseVisualStyleBackColor = false;
@@ -239,13 +239,13 @@
             this.panelHOME.Location = new System.Drawing.Point(0, 32);
             this.panelHOME.Margin = new System.Windows.Forms.Padding(0);
             this.panelHOME.Name = "panelHOME";
-            this.panelHOME.Size = new System.Drawing.Size(1022, 649);
+            this.panelHOME.Size = new System.Drawing.Size(1090, 635);
             this.panelHOME.TabIndex = 2;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 2);
@@ -254,11 +254,11 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.09385F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.90615F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 78F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 251F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1022, 649);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1090, 635);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -278,7 +278,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1022, 61);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1090, 48);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // flatLabel10
@@ -293,7 +293,7 @@
             this.flatLabel10.Location = new System.Drawing.Point(0, 0);
             this.flatLabel10.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel10.Name = "flatLabel10";
-            this.flatLabel10.Size = new System.Drawing.Size(154, 61);
+            this.flatLabel10.Size = new System.Drawing.Size(154, 48);
             this.flatLabel10.TabIndex = 0;
             this.flatLabel10.Text = "SEQNO";
             this.flatLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,10 +307,10 @@
             this.flatLabel11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.flatLabel11.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flatLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
-            this.flatLabel11.Location = new System.Drawing.Point(507, 0);
+            this.flatLabel11.Location = new System.Drawing.Point(541, 0);
             this.flatLabel11.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel11.Name = "flatLabel11";
-            this.flatLabel11.Size = new System.Drawing.Size(161, 61);
+            this.flatLabel11.Size = new System.Drawing.Size(161, 48);
             this.flatLabel11.TabIndex = 1;
             this.flatLabel11.Text = "BODYNO";
             this.flatLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -327,7 +327,7 @@
             this.flatLabel12.Location = new System.Drawing.Point(154, 0);
             this.flatLabel12.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel12.Name = "flatLabel12";
-            this.flatLabel12.Size = new System.Drawing.Size(353, 61);
+            this.flatLabel12.Size = new System.Drawing.Size(387, 48);
             this.flatLabel12.TabIndex = 0;
             this.flatLabel12.Text = "SEQNO";
             this.flatLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -341,10 +341,10 @@
             this.flatLabel13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.flatLabel13.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flatLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
-            this.flatLabel13.Location = new System.Drawing.Point(668, 0);
+            this.flatLabel13.Location = new System.Drawing.Point(702, 0);
             this.flatLabel13.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel13.Name = "flatLabel13";
-            this.flatLabel13.Size = new System.Drawing.Size(354, 61);
+            this.flatLabel13.Size = new System.Drawing.Size(388, 48);
             this.flatLabel13.TabIndex = 0;
             this.flatLabel13.Text = "SEQNO";
             this.flatLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -359,12 +359,12 @@
             this.tableLayoutPanel3.Controls.Add(this.advancedImageView3, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.pointcloudView1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 61);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 48);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1022, 258);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1090, 315);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // advancedImageView1
@@ -378,12 +378,45 @@
             this.advancedImageView1.Font = new System.Drawing.Font("Consolas", 9F);
             this.advancedImageView1.ForeColor = System.Drawing.Color.Lime;
             this.advancedImageView1.Location = new System.Drawing.Point(0, 0);
-            this.advancedImageView1.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.advancedImageView1.Margin = new System.Windows.Forms.Padding(0);
             this.advancedImageView1.Name = "advancedImageView1";
             this.advancedImageView1.ShowPixelColor = true;
-            this.advancedImageView1.Size = new System.Drawing.Size(339, 258);
+            this.advancedImageView1.Size = new System.Drawing.Size(363, 315);
             this.advancedImageView1.TabIndex = 0;
             this.advancedImageView1.ZoomPanModifierKey = System.Windows.Forms.Keys.None;
+            // 
+            // advancedImageView3
+            // 
+            this.advancedImageView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.advancedImageView3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
+            this.advancedImageView3.DefaultInterpolation = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;
+            this.advancedImageView3.EnableZoomPan = true;
+            this.advancedImageView3.Font = new System.Drawing.Font("Consolas", 9F);
+            this.advancedImageView3.ForeColor = System.Drawing.Color.Lime;
+            this.advancedImageView3.Location = new System.Drawing.Point(726, 0);
+            this.advancedImageView3.Margin = new System.Windows.Forms.Padding(0);
+            this.advancedImageView3.Name = "advancedImageView3";
+            this.advancedImageView3.ShowPixelColor = true;
+            this.advancedImageView3.Size = new System.Drawing.Size(364, 315);
+            this.advancedImageView3.TabIndex = 2;
+            this.advancedImageView3.ZoomPanModifierKey = System.Windows.Forms.Keys.None;
+            // 
+            // pointcloudView1
+            // 
+            this.pointcloudView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pointcloudView1.DrawFPS = false;
+            this.pointcloudView1.Location = new System.Drawing.Point(363, 0);
+            this.pointcloudView1.Margin = new System.Windows.Forms.Padding(0);
+            this.pointcloudView1.Name = "pointcloudView1";
+            this.pointcloudView1.OpenGLVersion = SharpGL.Version.OpenGLVersion.OpenGL2_1;
+            this.pointcloudView1.RenderContextType = SharpGL.RenderContextType.FBO;
+            this.pointcloudView1.RenderTrigger = SharpGL.RenderTrigger.Manual;
+            this.pointcloudView1.Size = new System.Drawing.Size(363, 315);
+            this.pointcloudView1.TabIndex = 3;
             // 
             // tableLayoutPanel4
             // 
@@ -403,13 +436,13 @@
             this.tableLayoutPanel4.Controls.Add(this.flatLabel8, 3, 0);
             this.tableLayoutPanel4.Controls.Add(this.flatLabel9, 4, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 319);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 363);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1022, 78);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1090, 72);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // flatLabel2
@@ -454,7 +487,7 @@
             this.flatLabel4.Location = new System.Drawing.Point(0, 24);
             this.flatLabel4.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel4.Name = "flatLabel4";
-            this.flatLabel4.Size = new System.Drawing.Size(128, 54);
+            this.flatLabel4.Size = new System.Drawing.Size(128, 48);
             this.flatLabel4.TabIndex = 3;
             this.flatLabel4.Text = "9999";
             this.flatLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -471,7 +504,7 @@
             this.flatLabel3.Location = new System.Drawing.Point(128, 24);
             this.flatLabel3.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel3.Name = "flatLabel3";
-            this.flatLabel3.Size = new System.Drawing.Size(128, 54);
+            this.flatLabel3.Size = new System.Drawing.Size(128, 48);
             this.flatLabel3.TabIndex = 5;
             this.flatLabel3.Text = "9999";
             this.flatLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -505,7 +538,7 @@
             this.flatLabel6.Location = new System.Drawing.Point(256, 24);
             this.flatLabel6.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel6.Name = "flatLabel6";
-            this.flatLabel6.Size = new System.Drawing.Size(128, 54);
+            this.flatLabel6.Size = new System.Drawing.Size(128, 48);
             this.flatLabel6.TabIndex = 5;
             this.flatLabel6.Text = "9999";
             this.flatLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -522,7 +555,7 @@
             this.flatLabel7.Location = new System.Drawing.Point(384, 24);
             this.flatLabel7.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel7.Name = "flatLabel7";
-            this.flatLabel7.Size = new System.Drawing.Size(128, 54);
+            this.flatLabel7.Size = new System.Drawing.Size(128, 48);
             this.flatLabel7.TabIndex = 5;
             this.flatLabel7.Text = "N/A";
             this.flatLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -557,7 +590,7 @@
             this.flatLabel9.Margin = new System.Windows.Forms.Padding(0);
             this.flatLabel9.Name = "flatLabel9";
             this.tableLayoutPanel4.SetRowSpan(this.flatLabel9, 2);
-            this.flatLabel9.Size = new System.Drawing.Size(510, 78);
+            this.flatLabel9.Size = new System.Drawing.Size(578, 72);
             this.flatLabel9.TabIndex = 6;
             this.flatLabel9.Text = "Waiting for signals...";
             this.flatLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -572,12 +605,12 @@
             this.tableLayoutPanel5.Controls.Add(this.ioPinmapView1, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.flatListView1, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 397);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 435);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1022, 252);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1090, 200);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
             // logview1
@@ -601,7 +634,7 @@
             this.logview1.Name = "logview1";
             this.logview1.ReadOnly = true;
             this.logview1.ShowDateTime = true;
-            this.logview1.Size = new System.Drawing.Size(437, 252);
+            this.logview1.Size = new System.Drawing.Size(505, 200);
             this.logview1.TabIndex = 0;
             this.logview1.Text = "";
             this.logview1.UpdateInterval = 100;
@@ -628,7 +661,7 @@
             this.ioPinmapView1.RWBackColorInactive = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.ioPinmapView1.RWForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(232)))), ((int)(((byte)(213)))));
             this.ioPinmapView1.ShowHeader = false;
-            this.ioPinmapView1.Size = new System.Drawing.Size(264, 252);
+            this.ioPinmapView1.Size = new System.Drawing.Size(264, 200);
             this.ioPinmapView1.TabIndex = 1;
             this.ioPinmapView1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(77)))));
             this.ioPinmapView1.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(211)))));
@@ -656,7 +689,7 @@
             this.flatListView1.RowColorEven = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(44)))), ((int)(((byte)(55)))));
             this.flatListView1.RowColorOdd = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(47)))));
             this.flatListView1.ShowItemBorder = false;
-            this.flatListView1.Size = new System.Drawing.Size(321, 252);
+            this.flatListView1.Size = new System.Drawing.Size(321, 200);
             this.flatListView1.TabIndex = 2;
             this.flatListView1.UseCompatibleStateImageBehavior = false;
             this.flatListView1.View = System.Windows.Forms.View.Details;
@@ -767,44 +800,14 @@
             this.logFileWatcher1.Interval = 3600000;
             this.logFileWatcher1.LogDirectory = "./Logs/";
             // 
-            // advancedImageView3
-            // 
-            this.advancedImageView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.advancedImageView3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
-            this.advancedImageView3.DefaultInterpolation = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;
-            this.advancedImageView3.EnableZoomPan = true;
-            this.advancedImageView3.Font = new System.Drawing.Font("Consolas", 9F);
-            this.advancedImageView3.ForeColor = System.Drawing.Color.Lime;
-            this.advancedImageView3.Location = new System.Drawing.Point(680, 0);
-            this.advancedImageView3.Margin = new System.Windows.Forms.Padding(0);
-            this.advancedImageView3.Name = "advancedImageView3";
-            this.advancedImageView3.ShowPixelColor = true;
-            this.advancedImageView3.Size = new System.Drawing.Size(342, 258);
-            this.advancedImageView3.TabIndex = 2;
-            this.advancedImageView3.ZoomPanModifierKey = System.Windows.Forms.Keys.None;
-            // 
-            // pointcloudView1
-            // 
-            this.pointcloudView1.DrawFPS = false;
-            this.pointcloudView1.Location = new System.Drawing.Point(344, 5);
-            this.pointcloudView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pointcloudView1.Name = "pointcloudView1";
-            this.pointcloudView1.OpenGLVersion = SharpGL.Version.OpenGLVersion.OpenGL2_1;
-            this.pointcloudView1.RenderContextType = SharpGL.RenderContextType.FBO;
-            this.pointcloudView1.RenderTrigger = SharpGL.RenderTrigger.Manual;
-            this.pointcloudView1.Size = new System.Drawing.Size(332, 237);
-            this.pointcloudView1.TabIndex = 3;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(33)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1090, 691);
-            this.Controls.Add(this.panelDASHBOARD);
             this.Controls.Add(this.panelHOME);
+            this.Controls.Add(this.panelDASHBOARD);
             this.Controls.Add(this.panelDB);
             this.Controls.Add(this.flatStatusBar1);
             this.Controls.Add(this.flatTitlePanel1);
@@ -819,10 +822,10 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pointcloudView1)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pointcloudView1)).EndInit();
             this.ResumeLayout(false);
 
         }
